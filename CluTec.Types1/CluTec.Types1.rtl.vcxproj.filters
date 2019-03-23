@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="1 - Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="2 - Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="4 - PImpl - Source">
+      <UniqueIdentifier>{8289bea1-63ec-4ac8-90c7-db9cebf6526c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3 - PImpl - Header">
+      <UniqueIdentifier>{f1375734-0ceb-4c0a-a67e-f86d5a58e143}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Guid.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExceptionTypes.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Reference.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageTypeValues.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageTypes.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageIntern.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageType.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageFormat.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Defines.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pixel.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataContainer.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataObject.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IDataContainer.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="IDataContainerImpl.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="IException.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="IImage.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="IImageImpl.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ILogger.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ILoggerImpl.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="IString.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ILayerImage.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ILayerImageImpl.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="LayerImage.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IArrayDoubleImpl.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="IArrayDouble.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayIntern.h">
+      <Filter>1 - Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IArrayInt32.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="IArrayInt32Impl.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="IArrayString.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="IArrayStringImpl.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="IArrayInt64.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+    <ClInclude Include="IArrayInt64Impl.h">
+      <Filter>3 - PImpl - Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>2 - Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>2 - Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Guid.cpp">
+      <Filter>2 - Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExceptionTypes.cpp">
+      <Filter>2 - Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>2 - Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageIntern.cpp">
+      <Filter>2 - Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataContainer.cpp">
+      <Filter>2 - Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IDataContainer.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IDataContainerImpl.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IException.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IImage.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IImageImpl.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ILogger.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ILoggerImpl.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IString.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ILayerImage.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ILayerImageImpl.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LayerImage.cpp">
+      <Filter>2 - Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IArrayDouble.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IArrayDoubleImpl.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IArrayInt32.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IArrayInt32Impl.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IArrayString.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IArrayStringImpl.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IArrayInt64.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IArrayInt64Impl.cpp">
+      <Filter>4 - PImpl - Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,59 @@
+
+DrawFrame(1, "axes");
+:E3_DRAW_VEC_AS_ARROW;
+
+DefVarsE3();
+dA = Slider("A", -180, 180, 1, 0) * RadPerDeg;
+dB = Slider("B", -180, 180, 1, 45) * RadPerDeg;
+
+dZ = Slider("Z", -180, 180, 1, 0) * RadPerDeg;
+
+EvalFrame =
+{
+	dA = _P(1);
+	dB = _P(2);
+	dZ = _P(3);
+	
+	vZ = VecE3(cos(dB) * cos(dA), sin(dA), sin(dB)*cos(dA)); 
+	
+	vZ = vZ / abs(vZ);
+	if (abs(vZ . e2) < 0.01)
+	{
+		//vX = e2 . *vZ;
+		vX = *(e2^vZ);
+		if (vX . e1 < 0)
+			vX = -vX;
+		
+		vY = *(vZ^vX);
+	}
+	else
+	{
+		//vY = -e1 . *vZ;
+		vY = -*(e1^vZ);
+		vX = *(vY^vZ);
+	}
+
+	_vX = vX / abs(vX);
+	_vY = vY / abs(vY);
+	
+	vX = cos(dZ) * _vX + sin(dZ) * _vY;
+	vY = -sin(dZ) * _vX + cos(dZ) * _vY;
+	
+	[vX, vY, vZ] break;
+}
+
+dX = 0;
+:Magenta;
+:Plot(EvalFrame(dX, dB, dZ)(1), [dX, -Pi, Pi, 100]);
+:Yellow;
+:Plot(EvalFrame(dX, dB, dZ)(2), [dX, -Pi, Pi, 100]);
+:Cyan;
+:Plot(EvalFrame(dX, dB, dZ)(3), [dX, -Pi, Pi, 100]);
+
+[vX, vY, vZ] = EvalFrame(dA, dB, dZ);
+
+:Magenta;
+:vX;
+:Yellow;
+:vY;
+:vZ :Cyan;
